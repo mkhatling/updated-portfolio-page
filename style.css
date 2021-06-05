@@ -1,0 +1,17 @@
+* {
+    color: #d87f8f;
+    background-color: #FAf3f3;
+}
+
+.btn {
+background-color: #A7bbc7;
+border: none;
+}
+
+.btn:hover {
+background-color: #d87f8f;
+}
+
+.card {
+    margin: 50px;
+}
