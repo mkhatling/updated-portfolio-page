@@ -7,53 +7,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" type = "text/css" href="./style.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Professional Portfolio</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="card" style="width: 18rem;">
-        <img src="./images/project-1-snip.PNG" class="card-img-top" alt="Project 1 image">
-        <div class="card-body">
-          <h5 class="card-title">Project 1: What Should I Watch?</h5>
-          <p class="card-text">A movie recommendation app to take some stress out of deciding what to watch on movie night. Also comes with a random drink generator for some extra fun!</p>
-          <a href="https://mkhatling.github.io/what-should-i-watch/" class="btn btn-primary">Check it out here!</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="./images/password-snip.PNG" class="card-img-top" alt="Password app image">
-        <div class="card-body">
-          <h5 class="card-title">Random Password Generator</h5>
-          <p class="card-text">Need a random password to keep your information or data secure? Look no further! This app will allow you to choose what characters to include to create a completely unique password. </p>
-          <a href="https://mkhatling.github.io/password-generator/" class="btn btn-primary">Check it out here!</a>
-        </div>
-      </div>
+    <header>
+        <h1>Maren K. Hatling</h1>
+        <nav>
+            <ul>
+                <a href="#about-me">About</a>
+                <a href="#works">Work</a>
+                <a href="#contact-info">Contact</a>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <section class="section-style">
+            <div class="sidebar">
+                <h2>About Me</h2>
+            </div>
+            <div id="about-me">
+                <p>My name is Maren Hatling. I live in Minneapolis, Minnesota, and I'm currently enrolled in a coding
+                    boot camp. This page is intended to showcase some of my projects that I've created either
+                    individually, or collaboratively with classmates.
+                    I am hoping to begin a career as a web developer once I am finished with the course. I have a degree
+                    in Psychology from the University of Minnesota which I think could make for an interesting
+                    combination with web development, especially when it comes to UI/UX, as that's playing towards the
+                    user's perceptions.
+                    I would love the opportunity to discuss this further, along with potential jobs. My contact
+                    information will be at the bottom of this page. Thanks for your time!
+                </p>
+            </div>
+        </section>
+
+        <section id="works">
+            <h2>Works</h2>
+            <div class="card w-60">
+                <img src="./images/project-1-snip.PNG" class="card-img-top" alt="Project 1 image">
+                <div class="card-body" id="project1">
+                    <h5 class="card-title">Project 1: What Should I Watch?</h5>
+                    <p class="card-text">A movie recommendation app to take some stress out of deciding what to watch on
+                        movie
+                        night. Also comes with a random drink generator for some extra fun!</p>
+                    <a href="https://mkhatling.github.io/what-should-i-watch/" class="btn btn-primary">Check it out
+                        here!</a>
+                </div>
+            </div>
+            <div class = "later-works">
+                <div class="card">
+                    <img src="./images/password-snip.PNG" class="card-img-top" alt="Password app image">
+                    <div class="card-body">
+                        <h5 class="card-title">Random Password Generator</h5>
+                        <p class="card-text">Need a random password to keep your information or data secure? Look no
+                            further!
+                            This
+                            app will allow you to choose what characters to include to create a completely unique
+                            password.
+                        </p>
+                        <a href="https://mkhatling.github.io/password-generator/" class="btn btn-primary">Check it out
+                            here!</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./images/workday-scheduler.PNG" class="card-img-top" alt="Workday Scheduler App">
+                    <div class="card-body">
+                        <h5 class="card-title">Work Day Scheduler</h5>
+                        <p class="card-text">A planner application to keep track of your busy workdays. Luxon was used to generate a clock to keep track of the date and time.</p>
+                        <a href="https://mkhatling.github.io/scheduler-app/" class="btn btn-primary">Check it out
+                            here!</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class = "contact-me">
+            <h2>Conact Information</h2>
+            
+            <footer>
+                <ul>
+                    <a href="#">Email: maren.hatling@gmail.com</a>
+                    <a href="https://github.com/mkhatling">GitHub</a>
+                    <a href="https://www.linkedin.com/in/marenkhatling/">LinkedIn</a>
+                    <a href="./assets/Maren Hatling-Resume (2).pdf" download>Resume</a>
+                </ul>
+            </footer>
+        </section>
+    </main>
 </body>
 
 </html>
